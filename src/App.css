@@ -1,0 +1,43 @@
+main {
+  width: 98vw;
+  height: 70vh;
+  /* background-color: rgb(58, 57, 57); */
+}
+
+.bodysfsd {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.h {
+  visibility: hidden;
+}
+.curved {
+  background: rgb(57, 206, 57);
+  /* background: rgb(22, 187, 22); */
+  /* color: white; */
+  text-align: center;
+}
+
+.curved h1 {
+  font-size: 6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0;
+}
+
+.curved p {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 5rem;
+}
+
+.curved svg {
+  display: block;
+}
+
+.curved.upper {
+  background-color: white;
+}

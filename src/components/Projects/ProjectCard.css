@@ -1,0 +1,45 @@
+.projectcard ul {
+  padding-right: "5%";
+  margin-bottom: "5%";
+}
+
+#projectImage {
+  width: 120%;
+  padding-top: 0%;
+  margin-right: 0%;
+  /* border-radius: 2rem; */
+  /* background-color: red; */
+}
+#projectImage img {
+  border-radius: 2rem;
+  /* background-color: red; */
+}
+
+#flickFinder img {
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 250px;
+}
+
+#linkToProject:hover {
+  color: rgba(0, 168, 107);
+}
+@media (max-width: 1025px) {
+  #projectImage {
+    text-align: center;
+    width: 132%;
+    padding-top: 0%;
+    margin-right: 0%;
+    /* border-radius: 2rem; */
+    /* background-color: red; */
+  }
+
+  #projectImage img {
+    /* width: 100%;
+    margin-right: 10%; */
+    padding-left: 0;
+    /* background-color: red; */
+    border-radius: 1.3rem 1.3rem;
+  }
+}

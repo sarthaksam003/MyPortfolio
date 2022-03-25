@@ -1,0 +1,237 @@
+.about-body {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  border-radius: 2rem;
+  margin: 3% 5% 0 14%;
+  padding-bottom: 2%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.aboutContainer {
+  display: "flex";
+  flex-direction: "row";
+  justify-content: "space-between";
+  align-items: "center";
+  margin-top: 1%;
+}
+.heading {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 2%;
+  margin: 2% 0 0 5%;
+}
+h1 {
+  display: flex;
+  margin-top: 0;
+}
+
+.headingAnim {
+  animation: anim-lineUp 2s ease-in-out;
+}
+
+.fadeInAnim {
+  animation: fadeInAnim 1s ease-in-out;
+}
+
+.contentbox {
+  padding: 2%;
+  margin: 0 0 0 5%;
+  width: 90%;
+  display: flex;
+}
+.contentbox p {
+  padding: 0;
+  margin: 0 0 0 0;
+  animation: fadeInAnim 1s ease-in-out;
+}
+
+.skillsbox {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3%;
+  margin-bottom: 0;
+  height: 2.5%;
+}
+.progressbar {
+  width: 60%;
+  border: 3px solid white;
+  border-radius: 2rem;
+  height: 168%;
+  margin-left: 3%;
+}
+
+#HTML {
+  background-color: rgba(0, 168, 107);
+  border-radius: 2rem;
+  width: 80%;
+  text-align: center;
+  animation: HtmlProgressBar 0.8s ease-in-out;
+  /* margin-left: 3%; */
+}
+#CSS {
+  background-color: rgba(0, 168, 107);
+  border-radius: 2rem;
+  width: 80%;
+  text-align: center;
+  animation: HtmlProgressBar 0.8s ease-in-out;
+  /* margin-left: 3%; */
+}
+#JS {
+  background-color: rgba(0, 168, 107);
+  border-radius: 2rem;
+  width: 70%;
+  text-align: center;
+  animation: JSProgressBar 0.8s ease-in-out;
+  /* margin-left: 3%; */
+}
+#ReactJS {
+  background-color: rgba(0, 168, 107);
+  border-radius: 2rem;
+  width: 60%;
+  text-align: center;
+  animation: ReactJSProgressBar 0.8s ease-in-out;
+  /* margin-left: 3%; */
+}
+
+.imagesBox {
+  /* margin: 6% 0 0 5%; */
+  display: flex;
+  width: 10%;
+  flex-wrap: wrap;
+  margin: 0 0 4rem 4rem;
+  /* background: red; */
+  /* height: 20rem; */
+  /* style={{ margin: "6% 0 0 5%", width: "65%", height: "20rem" }} */
+}
+
+.singleImageBox img {
+  /* justify-content: space-between; */
+  /* margin-left: 10rem; */
+  width: 35%;
+  /* height: 180px; */
+  /* style={{ marginLeft: "10rem" }} */
+  
+}
+
+.htmlLogo {
+  /* style={{ paddingRight: "10rem" }} */
+}
+
+.jsLogo {
+  /* padding-right: 10rem; */
+  /* style={{ paddingRight: "10rem" }} */
+}
+
+@media screen and (max-width: 768px) {
+  .imagesBox {
+    /* margin: 6% 0 0 5%; */
+    display: none;
+    /* width: 65%; */
+    /* flex-wrap: wrap; */
+    /* height: 20rem; */
+    /* style={{ margin: "6% 0 0 5%", width: "65%", height: "20rem" }} */
+  }
+
+  .about-body {
+    width: 70%;
+    margin: 3% 5% 8% 14%;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .about-body {
+    margin: 12% 5% 8% 14%;
+  }
+  .imagesBox{
+    /* background-color: red; */
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-body {
+    margin: 2% 2% 5% 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .aboutContainer {
+    width: 100%;
+    bottom: 10rem;
+  }
+  #aboutBody {
+    width: 60rem;
+    height: 33rem;
+  }
+  .progressbar {
+    width: 60%;
+    border: 3px solid white;
+    border-radius: 2rem;
+    height: 1.87rem;
+    margin-left: 3%;
+  }
+  .imagesBox {
+    width: 40%;
+    /* margin-right: 10%; */
+  }
+}
+@media screen and (max-width: 426px) {
+  h1 {
+    font-size: 150%;
+  }
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeInAnim {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes HtmlProgressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes JSProgressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes ReactJSProgressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
