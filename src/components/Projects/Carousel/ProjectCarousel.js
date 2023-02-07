@@ -1,4 +1,5 @@
 import React from "react";
+import vid0 from "./proj0.gif";
 import vid1 from "./proj1.gif";
 import vid2 from "./proj2.gif";
 import vid3 from "./proj3.gif";
@@ -10,6 +11,10 @@ const ProjectCarousel = ({ deviceType }) => {
     <React.Fragment>
       <div className="slider">
         <Carousel>
+          <div>
+            <img src={vid0} alt="project0" />
+            <p className="legend">Legend 0</p>
+          </div>
           <div>
             <img src={vid1} alt="project1" />
             <p className="legend">Legend 1</p>

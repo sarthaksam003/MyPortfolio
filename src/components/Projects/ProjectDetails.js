@@ -1,4 +1,10 @@
 export const ProjectDetails = {
+  project0: [
+    `A fully responsive webapp to track gym/home workouts using ExerciseDB API.`,
+    `The app uses Firebase Realtime Database to store and retrieve data entered by users.`,
+    `Users can browse a large collection of exercises categorized by target muscles.`,
+    `The app allows users to save workouts and retrieve them by date from firebase to track progress.`,
+  ],
   project1: [
     `An apparel (e-commerce) store which allowed users to purchase clothes from.`,
     `Implemented routing to different pages of the store using React Router Dom and Form Validation.`,

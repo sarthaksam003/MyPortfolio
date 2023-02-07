@@ -1,4 +1,5 @@
 import React from "react";
+import vid0 from "./Carousel/proj0.gif";
 import vid1 from "./Carousel/proj1.gif";
 import vid2 from "./Carousel/proj2.gif";
 import vid3 from "./Carousel/proj3.gif";
@@ -11,6 +12,14 @@ const Projects = () => {
     <React.Fragment>
       <div style={{ margin: "8% 5% 5% 5%", padding: "0%" }}>
         <Carousel indicators={false} variant="dark">
+          <Carousel.Item>
+            <ProjectCard
+              vid1={vid0}
+              projectId="project0"
+              heading="Better Than Before"
+              linkToProject="https://better-than-before.netlify.app/"
+            />
+          </Carousel.Item>
           <Carousel.Item>
             <ProjectCard
               vid1={vid1}
